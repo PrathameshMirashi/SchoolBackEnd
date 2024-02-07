@@ -11,7 +11,9 @@ app.use(express.json());
 
 app.use(cors());
 
-mongoose.connect("mongodb://127.0.0.1:27017/School");
+mongoose.connect(
+  "mongodb+srv://prathammirashi48:7406588600@cluster0.g3y0iwa.mongodb.net/School"
+);
 
 app.post("/", async (req, res) => {
   //   SignupModule.create(req.body)
