@@ -61,17 +61,17 @@ app.post("/teacher", async (req, res) => {
 app.get("/student", async (req, res) => {
   let data = await StudentModule.find();
   res.json(data);
-  //   StudentModule.find()
-  //     .then((students) => res.json(students))
-  //     .catch((err) => res.json(err));
+  // StudentModule.find()
+  //   .then((students) => res.json(students))
+  //   .catch((err) => res.json(err));
 });
 
 app.get("/teacher", async (req, res) => {
   let data = await TeacherModule.find();
   res.json(data);
-  //   StudentModule.find()
-  //     .then((students) => res.json(students))
-  //     .catch((err) => res.json(err));
+  // TeacherModule.find()
+  //   .then((teachers) => res.json(teachers))
+  //   .catch((err) => res.json(err));
 });
 
 app.listen(5000, () => {
