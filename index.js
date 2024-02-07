@@ -11,9 +11,6 @@ app.use(express.json());
 
 app.use(cors());
 
-// mongoose.connect(
-//   "mongodb+srv://amolraipurear:amol1234@cluster0.f72lrnq.mongodb.net/School"
-// );
 mongoose.connect("mongodb://127.0.0.1:27017/School");
 
 app.post("/", async (req, res) => {
